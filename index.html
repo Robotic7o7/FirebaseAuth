@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Firebase Auth</title>
+    <title>Login</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -22,15 +22,47 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="index.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
   </head>
   <body>
-    <div class="heading">Firebase Auth Example</div>
+    <div class="heading">
+      Welcome User! <br /><br /><br />
+      <span> Login here.</span>
+    </div>
+    <br />
     <div class="login" id="login">
       <label class="lab">Email</label>
-      <input type="text" class="in" placeholder="Enter Email" />
+      <input type="text" class="in" id="email" placeholder="Enter Email" />
       <label class="lab">Password</label>
-      <input type="password" class="in" placeholder="Enter Password" />
-      <button class="but">&nbsp; Login To Your Account &nbsp;</button>
+      <input
+        type="password"
+        class="in"
+        id="pass"
+        placeholder="Enter Password"
+      />
+      <br />
+      <button class="but" onclick="login()">
+        &nbsp; Login to your Account &nbsp;
+      </button>
     </div>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyABEdVO6CIRwjPqqoViWZeHWojuA90jvn0",
+        authDomain: "authex-6a152.firebaseapp.com",
+        databaseURL: "https://authex-6a152.firebaseio.com",
+        projectId: "authex-6a152",
+        storageBucket: "authex-6a152.appspot.com",
+        messagingSenderId: "398591283770",
+        appId: "1:398591283770:web:8ae8ee751b7f5e46b3db03",
+        measurementId: "G-NKJ2N19WE8"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>

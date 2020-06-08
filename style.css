@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #0f8aea;
   background-size: cover;
 }
 
@@ -12,23 +12,24 @@
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Montserrat" sans-serif;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
   padding-top: 50px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
+  color: #fff;
 }
 
 .login {
-  background-color: #e4e2e2;
+  background-color: #fdfcfc;
   width: 30%;
   margin: 0px auto;
-  margin-top: 100px;
+  margin-top: 10px;
   align-items: center;
   padding: 50px;
   border-radius: 10px;
-  box-shadow: 5px 10px 2px #888888;
+  box-shadow: 5px 10px 2px #000;
 }
 
 .lab {
@@ -44,22 +45,46 @@
 .in {
   display: block;
   border: 1px solid #000;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #fff;
   outline: none;
-  padding: 10px;
-  width: 100%;
+  padding: 20px;
+  width: 89%;
   box-shadow: 5px 5px 2px #888888;
   margin-bottom: 20px;
   margin-top: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 
 .but {
   display: block;
   border: rgb(252, 7, 7);
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
+  font-size: auto;
+  width: 100%;
+  font-weight: 700;
   background-color: #506ffe;
   align-content: center;
+  transform: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.login button:hover {
+  background-color: #fff;
+  color: #506ffe;
+  border: 1px solid #506ffe;
+}
+
+.login input:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #506ffe;
+}
+
+.pa {
+  background-color: inherit;
 }
